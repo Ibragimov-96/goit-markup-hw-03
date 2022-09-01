@@ -128,11 +128,12 @@ img {
 /* hero */
 .section-hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .section-hero .container {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  
 }
 .hero-title {
   text-transform: uppercase;
@@ -165,7 +166,7 @@ img {
 }
 
 /* section */
-.section-benefits .container {
+.section-benefits{
   padding-top: 94px;
 }
 .title {
@@ -235,8 +236,9 @@ img {
 }
 
 /* studio */
-.studio .container {
+.studio{
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .studio-list {
   display: flex;
@@ -248,8 +250,9 @@ img {
 
 
 /* section comand */
-.section-comand .container {
+.section-comand{
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-comand {
   background-color: var(--secondary-bg-color);
@@ -269,8 +272,8 @@ img {
 }
 
 .comand-information {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .paragraph-comand {
@@ -307,7 +310,7 @@ img {
 }
 
 /* clients */
-.clients .container {
+.clients{
   padding-top: 94px;
   padding-bottom: 106px;
 }
@@ -413,7 +416,7 @@ footer {
 .header-portfolio {
   border-bottom: 1px solid #ececec;
 }
-.portfolio .container {
+.portfolio{
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -439,6 +442,9 @@ footer {
 }
 .description {
   padding: 20px 24px;
+  
+  border: 1px solid #EEEEEE;
+  border-top: none;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
