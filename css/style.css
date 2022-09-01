@@ -3,9 +3,9 @@
 /* фон #FFFFFF*/
 /* подсветка #2196F3*/
 *,
-*::before,
+/* *::before,
 *::after {
-}
+} */
 :root {
   --primari-text-color: #757575;
   --title-text-color: #212121;
@@ -210,21 +210,19 @@ img {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  gap: 30px;
+  flex-basis: calc((100%-3*30px)/4);
 }
 
 .benefits-img {
   margin-bottom: 30px;
 }
-.benefits-img:first-child {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 .benefits-iten {
   width: 270px;
 }
 
-.benefits-list .benefits-iten:not(:last-child) {
-  margin-right: 30px;
-}
+
 
 .paragraph-benefits {
   margin-top: 0;
@@ -245,13 +243,9 @@ img {
   margin-bottom: 0;
   margin-top: 0;
   gap: 30px;
+  flex-basis: calc((100%-2*30px)/3);
 }
-.studio-list li:not(:last-child) {
-  margin-right: 30px;
-}
-.studio li:not(:last-child) {
-  margin-right: 30px;
-}
+
 
 /* section comand */
 .section-comand .container {
@@ -264,15 +258,16 @@ img {
 .comand-list {
   display: flex;
   margin-bottom: 0;
+  margin-top: 0;
+  flex-basis: calc((100%-30px*3)/4) ;
+  gap: 30px;
 }
 
 .comand-iten {
   width: 270px;
   background-color: var(--primari-white-color);
 }
-.comand-iten:not(:last-child) {
-  margin-right: 30px;
-}
+
 .comand-information {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -328,14 +323,13 @@ img {
   margin-bottom: 0;
   margin-top: 0;
   display: flex;
+  gap: 30px;
+  flex-basis: calc((100%-30px*5)/6);
 }
-.client-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 /* foter */
 
-.foter {
-}
+
 address {
   font-style: normal;
 }
@@ -358,8 +352,6 @@ footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.foter .container {
 }
 
 .foter .logo {
@@ -457,13 +449,12 @@ footer {
 .portfolio-list {
   display: flex;
   justify-content: center;
+  gap: 8px;
+  flex-basis: calc((100%-8px*4)/5);
   margin-top: 0;
   margin-bottom: 50px;
-  min-width: 74px;
-}
-.portfolio-list .portfolio-link-button:not(:last-child) {
-  margin-right: 8px;
-}
+  min-width: 74px;}
+
 /* section portfolio */
 
 .project-title {
@@ -503,15 +494,18 @@ footer {
 .project-list li:nth-last-child(3n + 1) {
   margin-right: 0;
 }
-.project-link {
+/* .project-link {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-}
+} */
 .project-list {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 0;
   margin-bottom: 0;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100%-30px*2)/3);
 }
 
 .button-portfolio {
